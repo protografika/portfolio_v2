@@ -1,0 +1,166 @@
+* {
+    font-family: calibri;
+}
+
+body {
+    background-color: #fbee01
+}
+
+/* change cursor for detail:summaries on ABOUT */
+details {
+    cursor: pointer;
+}
+
+/* styles h1 nav-text into "regular" text, ie. removes exception */
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* central div, nav-column & right-column within */
+.central-container {
+    display: flex;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navigation column, with links & logo */
+.nav-column {
+    position: relative;
+    width: 200px;
+}
+
+/* navigation hyperlinks, to black */
+.nav-column a {
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+}
+
+/* navigation hyperlinks, to grey on hover */
+.nav-column a:hover {
+    color: grey;
+}
+
+/* copywright notice */
+.subscript {
+    font-size: 0.7em;
+}
+
+/* strike through links (dead/unassigned) for nav-bar etc. */
+.dead-link {
+    text-decoration: line-through;
+}
+
+/* main column for images/text */
+.right-column {
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+}
+
+/* navigation hyperlinks, to black */
+.right-column a {
+    color: black;
+    text-decoration: none
+}
+
+/* navigation hyperlinks, to grey on hover */
+.right-column a:hover {
+    color: grey;
+}
+
+/* LOGO on CONTACT */
+.header-logo{
+    max-width: 1500px;
+}
+
+/* Additional padding for portrait orientation, affects logo IMG on CONTACT */
+@media (orientation: portrait) { 
+    .header-logo{
+        padding: 50px 0px 0px 0px;
+    }
+}
+
+/* self-portrait on ABOUT */
+.inline-image {
+    max-width: 100%;
+}
+
+/* padding DIV on CONTACT page */
+#padding{
+    height: 60px;
+}
+
+/* list container for image galleries ILLUSTRATION and CONTACT */
+ul {
+    list-style: none;
+    margin: 0px;
+    padding-inline-start: 0px;
+}
+
+/* image gallery entries */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* image gallery entries */
+.image-gallery>li {
+    flex-basis: 418px;
+}
+
+/* image gallery list items */
+.image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* grayscale on hover for list entries */
+.image-gallery li img:hover {
+    filter: grayscale(100%);
+}
+
+/* DIV for BIO on ABOUT */
+#bio-container {
+    max-width: 500px;
+}
+
+/* text in bio, w/ italic styyle */
+.oblique-text{
+    font-style: oblique;
+}
+
+/* icon padding */
+.ico {
+    cursor: pointer;
+    padding: 20px 0px 0px 5px;
+}
+
+/* hover style for icons in NAVBAR */
+.ico:hover {
+    opacity: 50%;
+    padding: 20px 0px 0px 5px;
+}
+
+/* small black square on ABOUT to balance whitespace */
+.balance-square {
+    padding: 128px 0px 0px 0px;
+    float: right;
+    width: 5vw;
+    max-width: 200px;
+}
+
+/* HREF go to top of page, ILLUSTRATION page */
+.goto-top {
+    position: absolute;
+    max-width: 10vw;
+    bottom: 0px;
+}
